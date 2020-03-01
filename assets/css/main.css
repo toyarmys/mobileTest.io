@@ -93,6 +93,11 @@ html{
 .navbar-toggler-icon:before{
 	content: '\2630';
 	color: #fff;
+	vertical-align: middle;
+}
+
+.header-cart li{
+	list-style: none;
 }
 
 /* End CSS Header*/
@@ -154,7 +159,7 @@ html{
 	position: relative;
 }
 
-.right-banner-up{
+.img-right-banner-up{
 	position: absolute;
 	top: 0;
 }
@@ -162,8 +167,8 @@ html{
 .content-right-banner-up{
 	position: absolute;
 	top: 50%;
-	left: 20%;
 	text-transform: uppercase;
+	left: 5rem;
 }
 
 .normal-content{
@@ -185,14 +190,14 @@ html{
 .content-right-banner-down{
 	position: absolute;
 	text-transform: uppercase;
-	bottom: 25%;
-	left: 20%;
+	bottom: 50%;
+	left: 2rem;
 }
 
 .button-right-banner-down{
 	position: absolute;
-	left: 20%;
-	bottom: 17%;
+	top: 55%;
+	left: 2rem;
 }
 
 /*End CSS Container-banner*/
@@ -592,7 +597,11 @@ footer .copyright_payment .footer_payment div{
 	margin-left: -2rem;
 }
 
-@media only screen and (min-width: 320px) and (max-width: 425px) {
+@media only screen and (min-width: 320px) and (max-width: 600px) {
+	.header-cart{
+		display: none;
+	}
+
 	.header-top-title{
 		display: none;
 	}
@@ -629,18 +638,30 @@ footer .copyright_payment .footer_payment div{
 		border-bottom: none;
 	}
 
+	.left-banner, .right-banner{
+		max-width: 32rem;
+	}
+
 	.right-banner, .left-banner{
 		padding: 0;
+		margin: auto;
 	}
 
 	.content-left-banner{
-		display: none;
+		position: absolute;
+		bottom: 10rem !important;
+		right: 4rem !important;
+		font-size: 2rem !important;
+		z-index: 3;
 	}
 
 	.button-left-banner{
-		position: absolute;
 		top: 60%;
-		left: 58%;
+		left: 54%;
+	}
+
+	.img-left-banner img{
+		margin-top: -.1rem;
 	}
 
 	.products-list{
@@ -669,16 +690,16 @@ footer .copyright_payment .footer_payment div{
 		width: 100%;
 	}
 
+	.button-right-banner-down{
+		top: 76%;
+		left: 20.5%;
+	}
+
 	.item{
 		display: flex;
 		width: 100%;
 		flex-direction: column-reverse;
 		margin-top: 3rem;
-	}
-
-	.button-right-banner-down{
-		top: 76%;
-		left: 20.5%;
 	}
 
 	.products_title{
@@ -687,6 +708,22 @@ footer .copyright_payment .footer_payment div{
 	    justify-content: center;
 	    text-align: center;
 	    align-items: center;
+	}
+
+	.product-img{
+		max-width: 32rem;
+		margin: auto;
+	}
+
+	.add-to-cart{
+		bottom: .5rem;
+		left: .4rem;
+		max-width: 100%;
+	}
+
+	.company_blogs_post_content{
+		max-width: 32rem;
+		margin: auto;
 	}
 	
 	footer{
@@ -739,166 +776,13 @@ footer .copyright_payment .footer_payment div{
 		text-align: center;
 		margin-left: 3rem;
 	}
-
-	.add-to-cart{
-		top: 50%;
-		left: 50%
-		width: 100%;
-	}
-}
-
-@media only screen and (min-width: 426px) and (max-width: 600px) {
-	.header-top-title{
-		display: none;
-	}
-	
-	.header_top-function-setting{
-		margin: 0;
-	}
-
-	.header_top_function{
-		width: 100%;
-		margin: auto;
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		text-align: center;
-	}
-
-	.header-top-function{
-		margin-left: 1rem;
-	}
-
-	.header-top-function-login{
-		margin-left: 2rem;
-	}
-
-	.nav-link{
-		margin-top: 3rem;
-		border-bottom: 1px solid black;
-		width: 100%;
-		margin-left: 0;
-	}
-
-	.nav-item:last-child a{
-		border-bottom: none;
-	}
-
-	.right-banner, .left-banner{
-		padding: 0;
-	}
-
-	.content-left-banner{
-		display: none;
-	}
-
-	.button-left-banner{
-		position: absolute;
-		top: 60%;
-		left: 58%;
-	}
-
-	.products-list{
-		display: flex;
-		justify-content: center;
-		text-align: center;
-		width: 100%;
-		margin: 0 auto;
-	}
-
-	.right-banner{
-		display: flex;
-		width: 100%;
-		flex-direction: column;
-	}
-
-	.right-banner{
-		margin-top: 1rem;
-	}
-
-	.right-banner-down{
-		margin-top: 1rem;
-	}
-
-	.img-right-banner-down img{
-		width: 100%;
-	}
-
-	.item{
-		display: flex;
-		width: 100%;
-		flex-direction: column-reverse;
-		margin-top: 3rem;
-	}
-
-	.button-right-banner-down{
-		top: 76%;
-		left: 20.5%;
-	}
-
-	.products-list{
-		/*display: none;*/
-	}
-	
-	footer{
-		display: flex;
-		flex-direction: row;
-	}
-
-	footer{
-		display: flex;
-		flex-direction: row;
-	}
-
-	.footer_about_us_title_border,.footer_address_title_border,
-	.footer_navigation_title_border{
-		display: none;
-	}
-
-	.footer_about_us_content{
-		text-align: left;
-	}
-
-	.footer_about_us_social_links{
-		margin-bottom: 0rem !important;
-	}
-
-	.footer_about_us_title, .footer_navigation_title,.footer_address_title{
-		font-weight: 700;
-	}
-	
-	.footer_navigation, .footer_about_us,.footer_address{
-		margin-top: 2rem;
-		border-bottom: 1px solid rgba(0,0,0,0.3);
-		padding-left: 3rem;
-	}
-
-	.footer_address{
-		border-bottom: none;
-	}
-
-	.footer_navigation_menu,.footer_address{
-		margin-bottom: 3rem;
-	}
-
-	.footer_address{
-		margin-top: 3rem;
-	}
-
-	.footer_copyright_title span{
-		display: none;
-	}
-
-	.footer_copyright_title:after{
-		content: '\00a9 Copyright by ArrowHitech';
-		font-size: 1.4rem;
-		text-align: center;
-		margin-left: 5rem;
-	}
 }
 
 @media only screen and (min-width: 601px) and (max-width: 767px){
-
+	.header-cart{
+		display: none;
+	}
+	
 	.left-banner{
 		padding: 0;
 	}
@@ -906,6 +790,8 @@ footer .copyright_payment .footer_payment div{
 	.right-banner{
 		margin-top: 1rem;
 		padding: 0;
+		max-width: 61rem;
+		display: flex;
 	}
 
 	.products-list{
@@ -944,8 +830,13 @@ footer .copyright_payment .footer_payment div{
 	}
 
 	.content-left-banner{
-		bottom: 14rem !important;
+		bottom: 15rem !important;
 		right: 7rem !important;
+		z-index: 3;
+	}
+
+	.right-banner-down{
+		margin-top: 15rem;
 	}
 }
 
@@ -988,16 +879,75 @@ footer .copyright_payment .footer_payment div{
 		font-size: 1.2rem;
 		margin-left: 2rem;
 	}
+
+	.right-banner{
+		margin-top: 1rem;
+		padding: 0;
+		max-width: 76.8rem;
+		display: flex;
+	}
+
+	.right-banner-down{
+		margin-top: 20rem;
+	}
+
+	.button-right-banner-down{
+		left: 5rem;
+	}
+
+	.content-right-banner-down{
+		left: 4rem;
+	}
+
+	.add-to-cart{
+		left: 5rem;
+	}
 }
 
-@media only screen and (min-width: 992px) and (max-width: 1348px){
+@media only screen and (min-width: 992px) and (max-width: 1199px){
 	.right-banner{
 		margin-top: 0;
 		padding-left: 1.5rem;
 	}
 
-	.img-right-banner-up img{
-		width: 95%;
+	.img-right-banner-down{
+		margin-top: -2rem;
+	}
+
+	.img-right-banner-down img{
+		margin-top: 1rem;
+	}
+
+	.navbar {
+		width: 100%;
+	}
+
+	.navbar-nav li a{
+		margin: 0 1rem;
+	}
+
+	.item{
+		margin: 0 1.5rem;
+	}
+
+	.left-banner{
+		padding-right: 1.5rem;
+	}
+
+	.products-list{
+		display: flex;
+		justify-content: center;
+	}
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1344px){
+	.right-banner{
+		margin-top: 0;
+		padding-left: 1.5rem;
+	}
+
+	.img-left-banner img{
+		height: 100%;
 	}
 
 	.img-right-banner-down{
@@ -1030,11 +980,17 @@ footer .copyright_payment .footer_payment div{
 	}
 }
 
-@media only screen and(min-width: 1349px){
-	.img-right-banner-down{
-		margin-top: -1rem;
+@media only screen and (min-width: 1345px){
+	.header_top-function-setting{
+		margin-right: 3rem;
 	}
-	.left-banner > .img-left-banner > .img{
-		margin-top: 3rem !important;
+
+	.img-left-banner img{
+		height: 100%;
+	}
+
+	.header-cart{
+		display: flex!important;
+		justify-content: flex-end!important;
 	}
 }

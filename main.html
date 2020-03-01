@@ -30,17 +30,17 @@
 <body>
 	<div class="container-fluid">
 		<div class="header-top-menu">
-				<div class="header-top-title">
-					<i class="far fa-bookmark"></i>&nbsp;&nbsp;Welcome to Franco - an e-Commerce PSD Template!
+			<div class="header-top-title">
+				<i class="far fa-bookmark"></i>&nbsp;&nbsp;Welcome to Franco - an e-Commerce PSD Template!
+			</div>
+			<div class="header-top-function">
+				<div class="header_top-function-setting">
+					<i class="fas fa-cog"></i>&nbsp;&nbsp;Shop Setting
 				</div>
-				<div class="header-top-function">
-					<div class="header_top-function-setting">
-						<i class="fas fa-cog"></i>&nbsp;&nbsp;Shop Setting
-					</div>
-					<div class="header-top-function-login">
-						<i class="fas fa-lock"></i>&nbsp;&nbsp;Member Login
-					</div>
+				<div class="header-top-function-login">
+					<i class="fas fa-lock"></i>&nbsp;&nbsp;Member Login
 				</div>
+			</div>
 		</div>
 		<nav class="navbar navbar-expand-lg">
 		  	<!-- Brand -->
@@ -77,16 +77,22 @@
 			      	<li class="nav-item">
 			        	<a class="nav-link" href="#"><i class="fas fa-search"></i></a>
 			      	</li>
-			      	<div class="navbar-nav justify-content-end">
-			      		<li class="nav-item">
-			        	<a class="nav-link" href="#"><i class="far fa-heart"></i></a>
-			      	</li>
 			      	<li class="nav-item">
-			        	<a class="nav-link" href="#"><i class="fas fa-shopping-cart"></i></a>
-			      	</li>
-			      	</div>
+	        			<a class="nav-link" href="#"><i class="far fa-heart"></i></a>
+		      		</li>
+		      		<li class="nav-item">
+		        		<a class="nav-link" href="#"><i class="fas fa-shopping-cart"></i></a>
+		      		</li>
 			    </ul>
 		  	</div>
+		  	<div class="header-cart">
+	      		<li class="nav-item">
+	        		<a class="nav-link" href="#"><i class="far fa-heart"></i></a>
+		      	</li>
+		      	<li class="nav-item">
+		        	<a class="nav-link" href="#"><i class="fas fa-shopping-cart"></i></a>
+		      	</li>
+	      	</div>
 		</nav>
 	</div>
 	<div class="container p-0">
@@ -108,29 +114,33 @@
 				</div>
 			</div>
 			<div class="col-12 col-sm-12 col-lg-4 col-xl-4 pr-0 right-banner">
-				<img src="assets/images/01_homepage_2_03.jpg" alt="" class="img-bg">
-				<div class="right-banner-up col-sm-12 p-0">
-					<div class="img-right-banner-up">
-						<img src="assets/images/2.png" alt="" class="img">
-					</div>
-					<div class="content-right-banner-up">
-						<p class="normal-content">small thing</p>
-						<div class="bold-content">make different</div>
+				<div class="right-banner-up">
+					<div class="img-contain">
+						<img src="assets/images/01_homepage_2_03.jpg" alt="" class="img-bg">
+						<div class="img-right-banner-up">
+							<img src="assets/images/2.png" alt="" class="img">
+						</div>
+						<div class="content-right-banner-up">
+							<p class="normal-content">small thing</p>
+							<div class="bold-content">make different</div>
+						</div>
 					</div>
 				</div>
 				<div class="right-banner-down">
-					<div class="img-right-banner-down">
-						<img src="assets/images/3.png" alt="" class="img">
+					<div class="img-contain">
+						<div class="img-right-banner-down">
+							<img src="assets/images/3.png" alt="" class="img">
+						</div>
+						<div class="content-right-banner-down">
+							<p class="normal-content">folio</p>
+							<div class="bold-content">backpack</div>
+						</div>
+						<div class="button-right-banner-down">
+							<button class="button-banner">
+								Shop Now
+							</button>
+						</div>
 					</div>
-					<div class="content-right-banner-down">
-						<p class="normal-content">folio</p>
-						<div class="bold-content">backpack</div>
-					</div>
-					<div class="button-right-banner-down">
-					<button class="button-banner">
-						Shop Now
-					</button>
-				</div>
 				</div>
 			</div>
 		</div>
@@ -806,7 +816,7 @@
 	        },
 	        768: {
 	          slidesPerView: 2,
-	          spaceBetween: 40,
+	          spaceBetween: 30,
 	        },
 	        1024:{
 	        	slidesPerView: 3,
