@@ -615,6 +615,10 @@ footer .copyright_payment .footer_payment div{
 }
 
 @media only screen and (min-width: 320px) and (max-width: 600px) {
+	.img-content{
+	 	width: 100%;
+	 	height: 18.1rem;
+	 }
 	.header-cart{
 		display: none;
 	}
