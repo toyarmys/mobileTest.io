@@ -418,6 +418,7 @@ html{
 	height: 6rem;
 	position: absolute;
 	top: 0;
+	z-index: 3;
 	margin-left: 2rem;
 	margin-top: 2.5rem;
 	background-color: #a1d1dd;
