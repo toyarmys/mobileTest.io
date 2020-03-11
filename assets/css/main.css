@@ -716,6 +716,10 @@ footer .copyright_payment .footer_payment div{
 		margin-right: 2rem;
 	}
 
+	.c{
+		display: none;
+	}
+
 	.a i, .b i{
 		color: black;
 	}
